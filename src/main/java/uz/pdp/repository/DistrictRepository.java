@@ -1,11 +1,10 @@
-package uz.pdp.task1.repository;
+package uz.pdp.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import uz.pdp.task1.entity.District;
+import uz.pdp.entity.District;
 
-import java.lang.annotation.Native;
 import java.util.List;
 
 @Repository

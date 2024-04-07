@@ -1,4 +1,4 @@
-package uz.pdp.task1.entity;
+package uz.pdp.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,17 +10,13 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Address {
+public class Region {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @Column(nullable = false)
-    private String houseNumber;
+    @Column(unique = true)
+    private String name;
 
-    @Column(nullable = false)
-    private String street;
-
-    @ManyToOne
-    private District district;
 }

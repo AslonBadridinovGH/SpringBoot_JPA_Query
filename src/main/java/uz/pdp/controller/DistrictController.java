@@ -1,14 +1,12 @@
-package uz.pdp.task1.controller;
+package uz.pdp.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import uz.pdp.task1.entity.Address;
-import uz.pdp.task1.entity.District;
-import uz.pdp.task1.entity.Region;
-import uz.pdp.task1.payload.AddressDto;
-import uz.pdp.task1.payload.DistrictDto;
-import uz.pdp.task1.repository.DistrictRepository;
-import uz.pdp.task1.repository.RegionRepository;
+import uz.pdp.payload.DistrictDto;
+import uz.pdp.entity.District;
+import uz.pdp.entity.Region;
+import uz.pdp.repository.DistrictRepository;
+import uz.pdp.repository.RegionRepository;
 
 import java.util.List;
 import java.util.Optional;

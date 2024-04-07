@@ -1,7 +1,7 @@
-package uz.pdp.task1.repository;
+package uz.pdp.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-import uz.pdp.task1.entity.Region;
+import uz.pdp.entity.Region;
 
 public interface RegionRepository extends JpaRepository<Region,Integer> {
 

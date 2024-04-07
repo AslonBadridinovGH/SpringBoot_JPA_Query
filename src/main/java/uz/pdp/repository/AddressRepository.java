@@ -1,10 +1,9 @@
-package uz.pdp.task1.repository;
+package uz.pdp.repository;
 
-import com.oracle.xmlns.internal.webservices.jaxws_databinding.JavaParam;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
-import uz.pdp.task1.entity.Address;
+import uz.pdp.entity.Address;
 
 import java.util.List;
 

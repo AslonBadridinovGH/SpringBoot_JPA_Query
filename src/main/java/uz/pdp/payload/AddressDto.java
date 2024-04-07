@@ -1,10 +1,6 @@
-package uz.pdp.task1.payload;
+package uz.pdp.payload;
 
 import lombok.Data;
-import uz.pdp.task1.entity.District;
-
-import javax.persistence.Column;
-import javax.persistence.ManyToOne;
 
 @Data
 public class AddressDto {

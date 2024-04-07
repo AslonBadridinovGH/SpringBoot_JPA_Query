@@ -1,4 +1,4 @@
-package uz.pdp.task1.entity;
+package uz.pdp.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,16 +10,18 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table (uniqueConstraints = @UniqueConstraint(columnNames = {"name", "region_id"}))
-public class District {
+public class Address {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String name;
+    @Column(nullable = false)
+    private String houseNumber;
+
+    @Column(nullable = false)
+    private String street;
 
     @ManyToOne
-    private Region region;
-
+    private District district;
 }
